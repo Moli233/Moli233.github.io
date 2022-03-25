@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>数据库创建命令</title>
+    <link href="/2022/03/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA%E5%91%BD%E4%BB%A4/"/>
+    <url>/2022/03/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA%E5%91%BD%E4%BB%A4/</url>
+    
+    <content type="html"><![CDATA[<h1 id="今天学上课学了数据库的常用命令"><a href="#今天学上课学了数据库的常用命令" class="headerlink" title="今天学上课学了数据库的常用命令"></a>今天学上课学了数据库的常用命令</h1><h6 id="注释：-包起来的值做修饰作用-部分-中的值可以省略-因为就算不写也默认"><a href="#注释：-包起来的值做修饰作用-部分-中的值可以省略-因为就算不写也默认" class="headerlink" title="注释：[]包起来的值做修饰作用 部分[]中的值可以省略 因为就算不写也默认"></a>注释：[]包起来的值做修饰作用 部分[]中的值可以省略 <del>因为就算不写也默认</del></h6><h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><ol><li>数据库语言不区分大小写</li><li>语句用,隔开</li><li>（）是描述作用域</li><li>mdf是主数据文件后缀</li><li>ndf是次数据文件后缀</li><li>ldf是日志文件的后缀</li><li>逻辑名可以理解为文件名</li><li>物理位置可以理解为完整路径</li><li>主数据文件只有一个</li><li>修改初始大小时只能大不能小<del>这不是废话吗，我存了20M你改成最大14，剩下的6难不成删了吗？</del></li><li>删除文件组必须得是组内无文件时才被允许的</li><li>除了新建数据库时不需要指定数据库 其他操作基本上都得使用 ALTER DATABASE [被指定的数据库名字] 来指定数据库进行操作</li><li>添加和创建都需要添加描述 描述最低得有 NAME AND FILENAME</li></ol><hr> <h1 id="查看数据库命令"><a href="#查看数据库命令" class="headerlink" title="查看数据库命令"></a>查看数据库命令</h1><h2 id="exec-SP-HELPDB-指定想看的数据库名"><a href="#exec-SP-HELPDB-指定想看的数据库名" class="headerlink" title="[exec] SP_HELPDB [指定想看的数据库名]"></a>[exec] SP_HELPDB [指定想看的数据库名]</h2><h2 id="如果不指定就展示所有数据库"><a href="#如果不指定就展示所有数据库" class="headerlink" title="如果不指定就展示所有数据库"></a>如果不指定就展示所有数据库</h2><h2 id="如果语句是在第一批处理的第一句话-可以省略exec"><a href="#如果语句是在第一批处理的第一句话-可以省略exec" class="headerlink" title="如果语句是在第一批处理的第一句话 可以省略exec"></a>如果语句是在第一批处理的第一句话 可以省略exec</h2><h2 id="如果不是一个批处理的第一个语句就得加exec-或者在前面加GO关键字-让后面的语句成为新的一批"><a href="#如果不是一个批处理的第一个语句就得加exec-或者在前面加GO关键字-让后面的语句成为新的一批" class="headerlink" title="如果不是一个批处理的第一个语句就得加exec 或者在前面加GO关键字 让后面的语句成为新的一批"></a>如果不是一个批处理的第一个语句就得加exec 或者在前面加GO关键字 让后面的语句成为新的一批</h2><hr><h1 id="部分属性"><a href="#部分属性" class="headerlink" title="部分属性"></a>部分属性</h1><ul><li>SIZE 为文件默认的初始大小</li><li>MAXSIZE 为文件最大的大小 <del>这看英文都知道了</del> 如果需要设置为不受限制的 值赋为unlimited</li><li>FILEGROWTH 为增长大小 可以设置百分比</li><li>↑这些计量默认都是MB</li><li>FILE 文件逻辑名 <del>也就是文件名</del></li><li>FILENAME 磁盘文件名 <del>也就是完整路径</del></li><li>NAME 文件名<hr></li></ul><h1 id="部分创建命令"><a href="#部分创建命令" class="headerlink" title="部分创建命令"></a>部分创建命令</h1><ul><li>CREATE DATABASE 数据库名字 创建数据库</li><li>on [PRIMARY] 创建主组PRIMARY 主组无法创建时自定义名字 </li><li>FILEGROUP [次组名] 创建次组</li><li>LOG on 创建日志文件<hr></li></ul><h1 id="部分删除命令"><a href="#部分删除命令" class="headerlink" title="部分删除命令"></a>部分删除命令</h1><ul><li>REMOVE FILE [文件名] 删除文件</li><li>REMOVE FILEGROUP [文件组名] 删除文件组</li><li>DROP DATABASE [数据库名] 删除数据库 <del>删库跑路</del></li></ul><hr><h1 id="部分添加命令"><a href="#部分添加命令" class="headerlink" title="部分添加命令"></a>部分添加命令</h1><ul><li>ADD FILEGROUP [文件组名] 添加文件组</li><li>ADD FILE [文件名] 添加文件 TO FILEGROUP [文件组] 到指定的文件组</li><li>ADD LOG FILE [日志文件名]</li></ul><hr><h1 id="部分修改命令"><a href="#部分修改命令" class="headerlink" title="部分修改命令"></a>部分修改命令</h1><ul><li>MODIFY FILE [被修改的文件名] 修改文件</li></ul><p><img src="https://s2.loli.net/2022/03/25/bIsm6Q2hFEjgiVl.jpg" alt="乐土猫猫"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>SQL Server</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>HelloWorld</title>
     <link href="/2022/03/25/helloWorld/"/>
     <url>/2022/03/25/helloWorld/</url>

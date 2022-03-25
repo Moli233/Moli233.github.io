@@ -16,20 +16,22 @@
   <meta name="description" content="">
   <meta name="author" content="Moli233">
   <meta name="keywords" content="笔记">
-  <meta name="description" content="把一切推到重来也许会有不一样的感受">
+  <meta name="description" content="今天学上课学了数据库的常用命令注释：[]包起来的值做修饰作用 部分[]中的值可以省略 因为就算不写也默认注意点 数据库语言不区分大小写 语句用,隔开 （）是描述作用域 mdf是主数据文件后缀 ndf是次数据文件后缀 ldf是日志文件的后缀 逻辑名可以理解为文件名 物理位置可以理解为完整路径 主数据文件只有一个 修改初始大小时只能大不能小这不是废话吗，我存了20M你改成最大14，剩下的6难不成删了吗">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HelloWorld">
-<meta property="og:url" content="http://example.com/2022/03/25/helloWorld/index.html">
+<meta property="og:title" content="数据库创建命令">
+<meta property="og:url" content="http://example.com/2022/03/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="墨璃的吐槽空间">
-<meta property="og:description" content="把一切推到重来也许会有不一样的感受">
+<meta property="og:description" content="今天学上课学了数据库的常用命令注释：[]包起来的值做修饰作用 部分[]中的值可以省略 因为就算不写也默认注意点 数据库语言不区分大小写 语句用,隔开 （）是描述作用域 mdf是主数据文件后缀 ndf是次数据文件后缀 ldf是日志文件的后缀 逻辑名可以理解为文件名 物理位置可以理解为完整路径 主数据文件只有一个 修改初始大小时只能大不能小这不是废话吗，我存了20M你改成最大14，剩下的6难不成删了吗">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-03-24T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-03-25T13:59:23.487Z">
+<meta property="og:image" content="https://s2.loli.net/2022/03/25/bIsm6Q2hFEjgiVl.jpg">
+<meta property="article:published_time" content="2022-03-25T07:50:30.000Z">
+<meta property="article:modified_time" content="2022-03-25T14:05:41.303Z">
 <meta property="article:author" content="Moli233">
-<meta property="article:tag" content="开端">
+<meta property="article:tag" content="SQL Server">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://s2.loli.net/2022/03/25/bIsm6Q2hFEjgiVl.jpg">
   
-  <title>HelloWorld - 墨璃的吐槽空间</title>
+  <title>数据库创建命令 - 墨璃的吐槽空间</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -187,7 +189,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="HelloWorld">
+            <span class="h2" id="subtitle" title="数据库创建命令">
               
             </span>
 
@@ -197,8 +199,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-03-25 00:00" pubdate>
-        2022年3月25日 凌晨
+      <time datetime="2022-03-25 15:50" pubdate>
+        2022年3月25日 下午
       </time>
     </span>
   
@@ -208,7 +210,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      17 字
+      843 字
     </span>
   
 
@@ -217,7 +219,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1 分钟
+      3 分钟
     </span>
   
 
@@ -246,10 +248,62 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">HelloWorld</h1>
+            <h1 style="display: none">数据库创建命令</h1>
             
             <div class="markdown-body">
-              <h1 id="把一切推到重来也许会有不一样的感受"><a href="#把一切推到重来也许会有不一样的感受" class="headerlink" title="把一切推到重来也许会有不一样的感受"></a>把一切推到重来也许会有不一样的感受</h1>
+              <h1 id="今天学上课学了数据库的常用命令"><a href="#今天学上课学了数据库的常用命令" class="headerlink" title="今天学上课学了数据库的常用命令"></a>今天学上课学了数据库的常用命令</h1><h6 id="注释：-包起来的值做修饰作用-部分-中的值可以省略-因为就算不写也默认"><a href="#注释：-包起来的值做修饰作用-部分-中的值可以省略-因为就算不写也默认" class="headerlink" title="注释：[]包起来的值做修饰作用 部分[]中的值可以省略 因为就算不写也默认"></a>注释：[]包起来的值做修饰作用 部分[]中的值可以省略 <del>因为就算不写也默认</del></h6><h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><ol>
+<li>数据库语言不区分大小写</li>
+<li>语句用,隔开</li>
+<li>（）是描述作用域</li>
+<li>mdf是主数据文件后缀</li>
+<li>ndf是次数据文件后缀</li>
+<li>ldf是日志文件的后缀</li>
+<li>逻辑名可以理解为文件名</li>
+<li>物理位置可以理解为完整路径</li>
+<li>主数据文件只有一个</li>
+<li>修改初始大小时只能大不能小<del>这不是废话吗，我存了20M你改成最大14，剩下的6难不成删了吗？</del></li>
+<li>删除文件组必须得是组内无文件时才被允许的</li>
+<li>除了新建数据库时不需要指定数据库 其他操作基本上都得使用 ALTER DATABASE [被指定的数据库名字] 来指定数据库进行操作</li>
+<li>添加和创建都需要添加描述 描述最低得有 NAME AND FILENAME</li>
+</ol>
+<hr>
+ 
+<h1 id="查看数据库命令"><a href="#查看数据库命令" class="headerlink" title="查看数据库命令"></a>查看数据库命令</h1><h2 id="exec-SP-HELPDB-指定想看的数据库名"><a href="#exec-SP-HELPDB-指定想看的数据库名" class="headerlink" title="[exec] SP_HELPDB [指定想看的数据库名]"></a>[exec] SP_HELPDB [指定想看的数据库名]</h2><h2 id="如果不指定就展示所有数据库"><a href="#如果不指定就展示所有数据库" class="headerlink" title="如果不指定就展示所有数据库"></a>如果不指定就展示所有数据库</h2><h2 id="如果语句是在第一批处理的第一句话-可以省略exec"><a href="#如果语句是在第一批处理的第一句话-可以省略exec" class="headerlink" title="如果语句是在第一批处理的第一句话 可以省略exec"></a>如果语句是在第一批处理的第一句话 可以省略exec</h2><h2 id="如果不是一个批处理的第一个语句就得加exec-或者在前面加GO关键字-让后面的语句成为新的一批"><a href="#如果不是一个批处理的第一个语句就得加exec-或者在前面加GO关键字-让后面的语句成为新的一批" class="headerlink" title="如果不是一个批处理的第一个语句就得加exec 或者在前面加GO关键字 让后面的语句成为新的一批"></a>如果不是一个批处理的第一个语句就得加exec 或者在前面加GO关键字 让后面的语句成为新的一批</h2><hr>
+
+<h1 id="部分属性"><a href="#部分属性" class="headerlink" title="部分属性"></a>部分属性</h1><ul>
+<li>SIZE 为文件默认的初始大小</li>
+<li>MAXSIZE 为文件最大的大小 <del>这看英文都知道了</del> 如果需要设置为不受限制的 值赋为unlimited</li>
+<li>FILEGROWTH 为增长大小 可以设置百分比</li>
+<li>↑这些计量默认都是MB</li>
+<li>FILE 文件逻辑名 <del>也就是文件名</del></li>
+<li>FILENAME 磁盘文件名 <del>也就是完整路径</del></li>
+<li>NAME 文件名<hr></li>
+</ul>
+<h1 id="部分创建命令"><a href="#部分创建命令" class="headerlink" title="部分创建命令"></a>部分创建命令</h1><ul>
+<li>CREATE DATABASE 数据库名字 创建数据库</li>
+<li>on [PRIMARY] 创建主组PRIMARY 主组无法创建时自定义名字 </li>
+<li>FILEGROUP [次组名] 创建次组</li>
+<li>LOG on 创建日志文件<hr></li>
+</ul>
+<h1 id="部分删除命令"><a href="#部分删除命令" class="headerlink" title="部分删除命令"></a>部分删除命令</h1><ul>
+<li>REMOVE FILE [文件名] 删除文件</li>
+<li>REMOVE FILEGROUP [文件组名] 删除文件组</li>
+<li>DROP DATABASE [数据库名] 删除数据库 <del>删库跑路</del></li>
+</ul>
+<hr>
+
+<h1 id="部分添加命令"><a href="#部分添加命令" class="headerlink" title="部分添加命令"></a>部分添加命令</h1><ul>
+<li>ADD FILEGROUP [文件组名] 添加文件组</li>
+<li>ADD FILE [文件名] 添加文件 TO FILEGROUP [文件组] 到指定的文件组</li>
+<li>ADD LOG FILE [日志文件名]</li>
+</ul>
+<hr>
+
+<h1 id="部分修改命令"><a href="#部分修改命令" class="headerlink" title="部分修改命令"></a>部分修改命令</h1><ul>
+<li>MODIFY FILE [被修改的文件名] 修改文件</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/03/25/bIsm6Q2hFEjgiVl.jpg" srcset="/img/loading.gif" lazyload alt="乐土猫猫"></p>
+
             </div>
             <hr>
             <div>
@@ -258,7 +312,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a>
+                      <a class="hover-with-bg" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
                     
                   </div>
                 
@@ -266,7 +320,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%BC%80%E7%AB%AF/">开端</a>
+                      <a class="hover-with-bg" href="/tags/SQL-Server/">SQL Server</a>
                     
                   </div>
                 
@@ -283,15 +337,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/03/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA%E5%91%BD%E4%BB%A4/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">数据库创建命令</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2022/03/25/helloWorld/">
+                        <span class="hidden-mobile">HelloWorld</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
