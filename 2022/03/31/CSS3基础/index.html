@@ -30,8 +30,9 @@
 <meta property="og:image" content="https://s2.loli.net/2022/04/01/hZ1QXINCqLSdWBM.png">
 <meta property="og:image" content="https://s2.loli.net/2022/04/02/MWexpXVK9yvjAnB.png">
 <meta property="og:image" content="https://s2.loli.net/2022/04/02/jwMt9ilL8ucaNzg.png">
+<meta property="og:image" content="https://s2.loli.net/2022/04/03/YfgOGrnPVplwdbc.png">
 <meta property="article:published_time" content="2022-03-31T14:32:48.000Z">
-<meta property="article:modified_time" content="2022-04-02T15:47:23.085Z">
+<meta property="article:modified_time" content="2022-04-03T15:31:47.325Z">
 <meta property="article:author" content="Moli233">
 <meta property="article:tag" content="CSS3">
 <meta name="twitter:card" content="summary_large_image">
@@ -216,7 +217,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3.3k 字
+      4.8k 字
     </span>
   
 
@@ -225,7 +226,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      10 分钟
+      15 分钟
     </span>
   
 
@@ -346,7 +347,125 @@
 <li>如果行高为40 字体大小为20 那么上下间距分别为10</li>
 <li>此时如果容器的高度也是40 那么是不是字就被上下等高的间距挤在了中间了呢？  NB!!!!<h1 id="CSS的背景"><a href="#CSS的背景" class="headerlink" title="CSS的背景"></a>CSS的背景</h1><h2 id="background-color-背景颜色"><a href="#background-color-背景颜色" class="headerlink" title="background-color 背景颜色"></a>background-color 背景颜色</h2></li>
 <li>如果不填颜色值 默认为透明 transparent(透明的)</li>
-<li>容器默认是透明 不需要手动写 <del>这就是点空的地方弹广告的原理吗？</del></li>
+<li>容器默认是透明 不需要手动写 <del>这就是点空的地方弹广告的原理吗？</del><h2 id="background-image-背景图片-常用于小log和超大背景图"><a href="#background-image-背景图片-常用于小log和超大背景图" class="headerlink" title="background-image 背景图片 常用于小log和超大背景图"></a>background-image 背景图片 常用于小log和超大背景图</h2></li>
+<li>参数 none 默认无背景图</li>
+<li>参数 url 使用绝对或相对路径添加图片 ps:url() 一定要记得带上括号一起玩！<h2 id="background-repeat-背景图片平铺方式"><a href="#background-repeat-背景图片平铺方式" class="headerlink" title="background-repeat 背景图片平铺方式"></a>background-repeat 背景图片平铺方式</h2></li>
+<li>参数 repeat 平铺</li>
+<li>参数 no-repeat 不平铺</li>
+<li>参数 repeat-x 沿着x轴平铺</li>
+<li>参数 repeat-y 沿着y轴平铺</li>
+<li>注意点 页面元素可以同时拥有背景颜色和背景图片 不过背景颜色处于最底层 图片相较于在上层<h2 id="background-position-背景图片位置"><a href="#background-position-背景图片位置" class="headerlink" title="background-position 背景图片位置"></a>background-position 背景图片位置</h2></li>
+<li>参数 x y 可以是具体的数字或百分比 也可以是方位名词<h3 id="方位名词参数"><a href="#方位名词参数" class="headerlink" title="方位名词参数"></a>方位名词参数</h3></li>
+<li>方位名词有 top left right center bottom</li>
+<li>使用方位名词时 x与y的顺序无所谓</li>
+<li>如果使用方位名词时只输入一个 那么另一个默认为center<h3 id="精确单位参数"><a href="#精确单位参数" class="headerlink" title="精确单位参数"></a>精确单位参数</h3></li>
+<li>第一个必是X轴的值 第二个必是Y轴的值</li>
+<li>如果只填写了一个精确单位的参数 Y轴默认居中(center)<h3 id="混合单位-也就是既填入了精确单位也填入了方位名词"><a href="#混合单位-也就是既填入了精确单位也填入了方位名词" class="headerlink" title="混合单位 也就是既填入了精确单位也填入了方位名词"></a>混合单位 也就是既填入了精确单位也填入了方位名词</h3></li>
+<li>注意点就一个 第一个为X 第二个为Y<h1 id="background-attachment-背景图片是否固定"><a href="#background-attachment-背景图片是否固定" class="headerlink" title="background-attachment 背景图片是否固定"></a>background-attachment 背景图片是否固定</h1></li>
+<li>参数 scroll 背景图片随着对象内容而滚动 （默认）</li>
+<li>参数fixed 背景图片固定<h1 id="background-背景复合写法"><a href="#background-背景复合写法" class="headerlink" title="background 背景复合写法"></a>background 背景复合写法</h1></li>
+<li>与字体复合写法相比 背景的复合写法是没有严格的顺序要求的</li>
+<li>规范的写法为 背景颜色 背景图片地址 背景平铺方式 背景滚动方式 背景图片位置;<h1 id="背景颜色透明度"><a href="#背景颜色透明度" class="headerlink" title="背景颜色透明度"></a>背景颜色透明度</h1></li>
+<li>语法 background: rgba(X,X,X,透明度)</li>
+<li>解析 rgb本是颜色代码 多加了个A(alpha)透明度 取值为0-1<h1 id="背景总结↓"><a href="#背景总结↓" class="headerlink" title="背景总结↓"></a>背景总结↓</h1><img src="https://s2.loli.net/2022/04/03/YfgOGrnPVplwdbc.png" srcset="/img/loading.gif" lazyload alt="背景总结"><h1 id="CSS的三大特性"><a href="#CSS的三大特性" class="headerlink" title="CSS的三大特性"></a>CSS的三大特性</h1><h2 id="叠层性"><a href="#叠层性" class="headerlink" title="叠层性"></a>叠层性</h2></li>
+<li>也可以理解为样式覆盖 不过覆盖的只是相同的样式</li>
+<li>比如说2个对同一个标签进行样式修改的标签选择器 第一个是 绿色 字大18 第二个是红色</li>
+<li>那么第一个的绿色会被红色覆盖 但字大不会<h2 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h2></li>
+<li>包容着你的爸标签的样式会应用到儿标签中</li>
+<li>但一般只会继承text font     line 这些元素开头的 以及color属性<h3 id="行高的继承"><a href="#行高的继承" class="headerlink" title="行高的继承"></a>行高的继承</h3></li>
+<li>有一种行高的写法是不直接给予确切的值 而是倍数 比如说 1.5</li>
+<li>这时候行高是根据当前字体尺寸来乘以给予的倍数算的</li>
+<li>而继承时 假如儿子有自己设置的字体尺寸 那行高也就是儿子的字体尺寸乘以1.5<h2 id="优先性"><a href="#优先性" class="headerlink" title="优先性"></a>优先性</h2><h3 id="每个选择器的权限等级不一-也可以说是权重-当一个标签被多个选择器指定样式-根据权限等级来应用样式"><a href="#每个选择器的权限等级不一-也可以说是权重-当一个标签被多个选择器指定样式-根据权限等级来应用样式" class="headerlink" title="每个选择器的权限等级不一(也可以说是权重) 当一个标签被多个选择器指定样式 根据权限等级来应用样式"></a>每个选择器的权限等级不一(也可以说是权重) 当一个标签被多个选择器指定样式 根据权限等级来应用样式</h3><table>
+<thead>
+<tr>
+<th align="center">选择器</th>
+<th align="center">权限级别</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">继承 *选择器</td>
+<td align="center">0,0,0,0</td>
+</tr>
+<tr>
+<td align="center">元素选择器</td>
+<td align="center">0,0,0,1</td>
+</tr>
+<tr>
+<td align="center">类、伪类选择器</td>
+<td align="center">0,0,1,0</td>
+</tr>
+<tr>
+<td align="center">ID选择器</td>
+<td align="center">0,1,0,0</td>
+</tr>
+<tr>
+<td align="center">行内样式 style&#x3D;””</td>
+<td align="center">1,0,0,0</td>
+</tr>
+<tr>
+<td align="center">!important</td>
+<td align="center">无限∞</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h4 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h4><ul>
+<li>大家都是!important时 看自身本有的权限</li>
+<li>浏览器默认是创建了一个a标签选择器 蓝色 有下划线 所以不会被继承的样式覆盖</li>
+<li>复合选择器的权重会叠加 比如说.类选择器 标签选择器 组合一起的后代选择器 权重算为0,0,1,1</li>
+<li>权重会叠加但永远不会进位 100个元素选择器组合成的复合选择器权重为0,0,0,100<h1 id="盒子模型-整个网页不过一个又一个的盒子组成而成"><a href="#盒子模型-整个网页不过一个又一个的盒子组成而成" class="headerlink" title="盒子模型 整个网页不过一个又一个的盒子组成而成"></a>盒子模型 整个网页不过一个又一个的盒子组成而成</h1><h2 id="盒子模型的组成"><a href="#盒子模型的组成" class="headerlink" title="盒子模型的组成"></a>盒子模型的组成</h2></li>
+<li>外边框 margin</li>
+<li>边框 border</li>
+<li>内边距 padding</li>
+<li>实际内容 content<h3 id="边框-border"><a href="#边框-border" class="headerlink" title="边框 border"></a>边框 border</h3><table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">border-width</td>
+<td align="center">定义边框的粗细，单位是px</td>
+</tr>
+<tr>
+<td align="center">border-style</td>
+<td align="center">定义边框的样式</td>
+</tr>
+<tr>
+<td align="center">border-color</td>
+<td align="center">定义边框的颜色</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="border-style"><a href="#border-style" class="headerlink" title="border-style"></a>border-style</h3><table>
+<thead>
+<tr>
+<th align="center">属性值</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">solid</td>
+<td align="center">实线边框</td>
+</tr>
+<tr>
+<td align="center">dashed</td>
+<td align="center">虚线边框</td>
+</tr>
+<tr>
+<td align="center">dotted</td>
+<td align="center">点线边框</td>
+</tr>
+</tbody></table>
+<h3 id="边框的复合写法"><a href="#边框的复合写法" class="headerlink" title="边框的复合写法"></a>边框的复合写法</h3><ul>
+<li>没有顺序要求 不过规范的写法为 先粗细 后样式 然后颜色<h3 id="注意点-1"><a href="#注意点-1" class="headerlink" title="注意点"></a>注意点</h3></li>
+<li>盒子是有四条边 那么我们每边都可以自定义</li>
+<li>border-top 顶部</li>
+<li>border-right 右边</li>
+<li>border-left 左边</li>
+<li>border-bottom 底部</li>
 </ul>
 
             </div>
