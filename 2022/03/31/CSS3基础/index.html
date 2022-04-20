@@ -31,8 +31,11 @@
 <meta property="og:image" content="https://s2.loli.net/2022/04/02/MWexpXVK9yvjAnB.png">
 <meta property="og:image" content="https://s2.loli.net/2022/04/02/jwMt9ilL8ucaNzg.png">
 <meta property="og:image" content="https://s2.loli.net/2022/04/03/YfgOGrnPVplwdbc.png">
+<meta property="og:image" content="https://s2.loli.net/2022/04/05/3nVfw12L5YjNGQl.png">
+<meta property="og:image" content="https://s2.loli.net/2022/04/05/d5PRCnM13DeK9tv.png">
+<meta property="og:image" content="https://s2.loli.net/2022/04/05/6xVJ5ePDMcHwQF8.png">
 <meta property="article:published_time" content="2022-03-31T14:32:48.000Z">
-<meta property="article:modified_time" content="2022-04-03T15:31:47.325Z">
+<meta property="article:modified_time" content="2022-04-14T12:31:34.524Z">
 <meta property="article:author" content="Moli233">
 <meta property="article:tag" content="CSS3">
 <meta name="twitter:card" content="summary_large_image">
@@ -217,7 +220,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      4.8k 字
+      8.1k 字
     </span>
   
 
@@ -226,7 +229,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      15 分钟
+      25 分钟
     </span>
   
 
@@ -317,7 +320,13 @@
 <li>a:hover 选择目前鼠标位置上的链接</li>
 <li>a:active 选择活动链接(比如说鼠标点击并未松开)</li>
 <li>链接伪类具有顺序性 如果顺序不对会无效果<h3 id="焦点伪类-focus-更改获取焦点的表单样式-一般配合input使用-也就是表单元素"><a href="#焦点伪类-focus-更改获取焦点的表单样式-一般配合input使用-也就是表单元素" class="headerlink" title="焦点伪类 focus 更改获取焦点的表单样式 一般配合input使用(也就是表单元素)"></a>焦点伪类 focus 更改获取焦点的表单样式 一般配合input使用(也就是表单元素)</h3></li>
-<li>语法 input:focus<h1 id="选择器总结-1"><a href="#选择器总结-1" class="headerlink" title="选择器总结"></a>选择器总结</h1><img src="https://s2.loli.net/2022/04/02/MWexpXVK9yvjAnB.png" srcset="/img/loading.gif" lazyload alt="选择器总结"><h1 id="CSS的元素显示模式分为两大类"><a href="#CSS的元素显示模式分为两大类" class="headerlink" title="CSS的元素显示模式分为两大类"></a>CSS的元素显示模式分为两大类</h1><h2 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h2></li>
+<li>语法 input:focus</li>
+</ul>
+<h2 id="伪类元素选择器-附加内容"><a href="#伪类元素选择器-附加内容" class="headerlink" title="伪类元素选择器(附加内容)"></a>伪类元素选择器(附加内容)</h2><ul>
+<li>first-letter 该选择器指定对象行内第一个字符的样式</li>
+<li>first-line 该选择器指定对象第一行的样式</li>
+<li>before 与内容相关的选择器搭配使用 在指定内容对象的行内前端插入内容</li>
+<li>after 与内容相关的选择器搭配使用 在指定内容对象的行内后端插入内容<h1 id="选择器总结-1"><a href="#选择器总结-1" class="headerlink" title="选择器总结"></a>选择器总结</h1><img src="https://s2.loli.net/2022/04/02/MWexpXVK9yvjAnB.png" srcset="/img/loading.gif" lazyload alt="选择器总结"><h1 id="CSS的元素显示模式分为两大类"><a href="#CSS的元素显示模式分为两大类" class="headerlink" title="CSS的元素显示模式分为两大类"></a>CSS的元素显示模式分为两大类</h1><h2 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h2></li>
 </ul>
 <ol>
 <li>比较霸道 自己独占一行</li>
@@ -375,7 +384,9 @@
 <li>但一般只会继承text font     line 这些元素开头的 以及color属性<h3 id="行高的继承"><a href="#行高的继承" class="headerlink" title="行高的继承"></a>行高的继承</h3></li>
 <li>有一种行高的写法是不直接给予确切的值 而是倍数 比如说 1.5</li>
 <li>这时候行高是根据当前字体尺寸来乘以给予的倍数算的</li>
-<li>而继承时 假如儿子有自己设置的字体尺寸 那行高也就是儿子的字体尺寸乘以1.5<h2 id="优先性"><a href="#优先性" class="headerlink" title="优先性"></a>优先性</h2><h3 id="每个选择器的权限等级不一-也可以说是权重-当一个标签被多个选择器指定样式-根据权限等级来应用样式"><a href="#每个选择器的权限等级不一-也可以说是权重-当一个标签被多个选择器指定样式-根据权限等级来应用样式" class="headerlink" title="每个选择器的权限等级不一(也可以说是权重) 当一个标签被多个选择器指定样式 根据权限等级来应用样式"></a>每个选择器的权限等级不一(也可以说是权重) 当一个标签被多个选择器指定样式 根据权限等级来应用样式</h3><table>
+<li>而继承时 假如儿子有自己设置的字体尺寸 那行高也就是儿子的字体尺寸乘以1.5<h2 id="优先性"><a href="#优先性" class="headerlink" title="优先性"></a>优先性</h2><h3 id="每个选择器的权限等级不一-也可以说是权重-当一个标签被多个选择器指定样式-根据权限等级来应用样式"><a href="#每个选择器的权限等级不一-也可以说是权重-当一个标签被多个选择器指定样式-根据权限等级来应用样式" class="headerlink" title="每个选择器的权限等级不一(也可以说是权重) 当一个标签被多个选择器指定样式 根据权限等级来应用样式"></a>每个选择器的权限等级不一(也可以说是权重) 当一个标签被多个选择器指定样式 根据权限等级来应用样式</h3></li>
+</ul>
+<table>
 <thead>
 <tr>
 <th align="center">选择器</th>
@@ -407,8 +418,6 @@
 <td align="center">无限∞</td>
 </tr>
 </tbody></table>
-</li>
-</ul>
 <h4 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h4><ul>
 <li>大家都是!important时 看自身本有的权限</li>
 <li>浏览器默认是创建了一个a标签选择器 蓝色 有下划线 所以不会被继承的样式覆盖</li>
@@ -417,7 +426,9 @@
 <li>外边框 margin</li>
 <li>边框 border</li>
 <li>内边距 padding</li>
-<li>实际内容 content<h3 id="边框-border"><a href="#边框-border" class="headerlink" title="边框 border"></a>边框 border</h3><table>
+<li>实际内容 content<br><img src="https://s2.loli.net/2022/04/05/3nVfw12L5YjNGQl.png" srcset="/img/loading.gif" lazyload alt="盒子模型组成"><h3 id="边框-border"><a href="#边框-border" class="headerlink" title="边框 border"></a>边框 border</h3></li>
+</ul>
+<table>
 <thead>
 <tr>
 <th align="center">属性</th>
@@ -437,9 +448,7 @@
 <td align="center">定义边框的颜色</td>
 </tr>
 </tbody></table>
-</li>
-</ul>
-<h3 id="border-style"><a href="#border-style" class="headerlink" title="border-style"></a>border-style</h3><table>
+<h4 id="border-style"><a href="#border-style" class="headerlink" title="border-style"></a>border-style</h4><table>
 <thead>
 <tr>
 <th align="center">属性值</th>
@@ -459,13 +468,283 @@
 <td align="center">点线边框</td>
 </tr>
 </tbody></table>
-<h3 id="边框的复合写法"><a href="#边框的复合写法" class="headerlink" title="边框的复合写法"></a>边框的复合写法</h3><ul>
-<li>没有顺序要求 不过规范的写法为 先粗细 后样式 然后颜色<h3 id="注意点-1"><a href="#注意点-1" class="headerlink" title="注意点"></a>注意点</h3></li>
+<h4 id="边框的复合写法"><a href="#边框的复合写法" class="headerlink" title="边框的复合写法"></a>边框的复合写法</h4><ul>
+<li>没有顺序要求 不过规范的写法为 先粗细 后样式 然后颜色<h4 id="注意点-1"><a href="#注意点-1" class="headerlink" title="注意点"></a>注意点</h4></li>
 <li>盒子是有四条边 那么我们每边都可以自定义</li>
 <li>border-top 顶部</li>
 <li>border-right 右边</li>
 <li>border-left 左边</li>
 <li>border-bottom 底部</li>
+<li>边框会影响盒子模型的实际大小 假如盒子设置宽&#x2F;高200 你设置的左右&#x2F;上下边框为10 那么实际大小为220 如果想要保持原有大小得把宽的值减去左右边框的值达到平衡<h4 id="边框的细线边框"><a href="#边框的细线边框" class="headerlink" title="边框的细线边框"></a>边框的细线边框</h4></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">属性值</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">border-collapse</td>
+<td align="center">collapse</td>
+<td align="center">设置单元格相邻边框合并在一起</td>
+</tr>
+<tr>
+<td align="center">默认情况下</td>
+<td align="center">是不合并的</td>
+<td align="center">显的边框很粗</td>
+</tr>
+</tbody></table>
+<h3 id="padding-内边框-指的是实际内容和外边框之间的距离"><a href="#padding-内边框-指的是实际内容和外边框之间的距离" class="headerlink" title="padding 内边框 指的是实际内容和外边框之间的距离"></a>padding 内边框 指的是实际内容和外边框之间的距离</h3><ul>
+<li>padding-top 内边框顶部</li>
+<li>padding-right 内边框右边</li>
+<li>padding-left 内边框左边</li>
+<li>padding-bottom 内边框底部</li>
+<li>内边框会影响盒子模型的实际大小 解决方法也是把盒子模型本身的宽&#x2F;高度减去左右&#x2F;上下内边框</li>
+<li>但如果你没有指明盒子的width&#x2F;height padding是不会撑开盒子的<h3 id="padding-内边距的复合语法规则"><a href="#padding-内边距的复合语法规则" class="headerlink" title="padding 内边距的复合语法规则"></a>padding 内边距的复合语法规则</h3></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">值的个数</th>
+<th align="center">表达含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">padding: 5px;</td>
+<td align="center">一个值 上下左右的边距皆为5px</td>
+</tr>
+<tr>
+<td align="center">padding: 5px 10px;</td>
+<td align="center">两个值 上下边距为5px 左右边距为10px</td>
+</tr>
+<tr>
+<td align="center">padding: 5px 10px 20px;</td>
+<td align="center">三个值 上边距为5px 左右边距为10px 下边距为20px</td>
+</tr>
+<tr>
+<td align="center">padding: 5px 10px 15px 20px;</td>
+<td align="center">四个值 上边距为5px 右边距为10px 下边距15px 左边距为20px 顺时针转</td>
+</tr>
+</tbody></table>
+<h3 id="margin-外边距"><a href="#margin-外边距" class="headerlink" title="margin 外边距"></a>margin 外边距</h3><table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">margin-top</td>
+<td align="center">顶部外边距</td>
+</tr>
+<tr>
+<td align="center">margin-right</td>
+<td align="center">右部外边距</td>
+</tr>
+<tr>
+<td align="center">margin-bottom</td>
+<td align="center">底部外边距</td>
+</tr>
+<tr>
+<td align="center">margin-left</td>
+<td align="center">左部外边距</td>
+</tr>
+</tbody></table>
+<h3 id="margin复合写法和padding一样"><a href="#margin复合写法和padding一样" class="headerlink" title="margin复合写法和padding一样"></a>margin复合写法和padding一样</h3><h2 id="外边距让块级盒子水平居中"><a href="#外边距让块级盒子水平居中" class="headerlink" title="外边距让块级盒子水平居中"></a>外边距让块级盒子水平居中</h2><ul>
+<li>条件1 必须设置宽度(width)</li>
+<li>条件2 左右外边距设置为auto</li>
+</ul>
+<h3 id="如果想让盒子内的文字垂直居中-让line-height-x3D-盒子的height就可以"><a href="#如果想让盒子内的文字垂直居中-让line-height-x3D-盒子的height就可以" class="headerlink" title="如果想让盒子内的文字垂直居中 让line-height&#x3D;盒子的height就可以"></a>如果想让盒子内的文字垂直居中 让line-height&#x3D;盒子的height就可以</h3><h3 id="如果想让盒子里的行内-x2F-行内块元素水平居中的话，请把文字的父亲加上text-align-center"><a href="#如果想让盒子里的行内-x2F-行内块元素水平居中的话，请把文字的父亲加上text-align-center" class="headerlink" title="如果想让盒子里的行内&#x2F;行内块元素水平居中的话，请把文字的父亲加上text-align: center;"></a>如果想让盒子里的行内&#x2F;行内块元素水平居中的话，请把文字的父亲加上text-align: center;</h3><h2 id="有一种特殊情况是-相邻块元素垂直外边框合并问题"><a href="#有一种特殊情况是-相邻块元素垂直外边框合并问题" class="headerlink" title="有一种特殊情况是 相邻块元素垂直外边框合并问题"></a>有一种特殊情况是 相邻块元素垂直外边框合并问题</h2><ul>
+<li>触发条件 上下相邻 上面的盒子有margin-bottom 值 下面盒子有margin-top 值</li>
+<li>问题呈现形式 值小的会被外边距消除</li>
+<li>解决方法 尽量给一个盒子添加margin值<br><img src="https://s2.loli.net/2022/04/05/d5PRCnM13DeK9tv.png" srcset="/img/loading.gif" lazyload alt="相邻块元素垂直外边距的合并"></li>
+</ul>
+<h2 id="还有一种特殊情况是-嵌套块元素垂直外边框塌陷问题"><a href="#还有一种特殊情况是-嵌套块元素垂直外边框塌陷问题" class="headerlink" title="还有一种特殊情况是 嵌套块元素垂直外边框塌陷问题"></a>还有一种特殊情况是 嵌套块元素垂直外边框塌陷问题</h2><ul>
+<li>触发条件 2个嵌套关系的块元素 父元素和子元素同时都有上外边距</li>
+<li>问题呈现形式 想象中父元素margin-top 20px 子元素margin-top 10px 就像合并之前一样<br>但实际上margin-top只会执行父元素的，但是值是从父子中选最大的<br><img src="https://s2.loli.net/2022/04/05/6xVJ5ePDMcHwQF8.png" srcset="/img/loading.gif" lazyload alt="嵌套块元素垂直外边框的塌陷"><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3></li>
+</ul>
+<ol>
+<li>给父元素添加border （恩断义绝）</li>
+<li>给父元素添加padding （恩断义绝）</li>
+<li>用属性 overflow: hidden</li>
+</ol>
+<h3 id="消除内外边距"><a href="#消除内外边距" class="headerlink" title="消除内外边距"></a>消除内外边距</h3><ul>
+<li>问 为什么需要消除？</li>
+<li>答 很多浏览器的默认设置不一样 我们消除手动设置才好</li>
+<li>用通配符选择器 padding: 0 margin: 0<h3 id="附加点"><a href="#附加点" class="headerlink" title="附加点"></a>附加点</h3></li>
+<li>行内元素一般只设置左右内外边距 因为她们不能设置宽高上下的设置没有用 <del>除非你转换为块级或行内块</del></li>
+</ul>
+<h2 id="圆角边框-border-radius"><a href="#圆角边框-border-radius" class="headerlink" title="圆角边框 border-radius"></a>圆角边框 border-radius</h2><table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">值</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">border-radius</td>
+<td align="center">数值或百分比</td>
+<td align="center">让边框圆角化</td>
+</tr>
+</tbody></table>
+<h3 id="用border-radius做圆形"><a href="#用border-radius做圆形" class="headerlink" title="用border-radius做圆形"></a>用border-radius做圆形</h3><ul>
+<li>首先容器得是个正方形</li>
+<li>然后把border-radius的值设置为百分之50或设置为长&#x2F;宽的一半</li>
+</ul>
+<h3 id="用border-radius做圆角矩形"><a href="#用border-radius做圆角矩形" class="headerlink" title="用border-radius做圆角矩形"></a>用border-radius做圆角矩形</h3><ul>
+<li>首先容器得是个长方体</li>
+<li>然后把border-radius的值设置为高度的一半</li>
+</ul>
+<h3 id="圆角边框也可以单独设置一个角"><a href="#圆角边框也可以单独设置一个角" class="headerlink" title="圆角边框也可以单独设置一个角"></a>圆角边框也可以单独设置一个角</h3><ul>
+<li>border-top-left-radius 左上角</li>
+<li>border-top-right-radius 右上角</li>
+<li>border-bottom-right-radius 右下角</li>
+<li>border-bottom-left-radius 左下角</li>
+</ul>
+<h3 id="border-radius也可以一次给予多个值"><a href="#border-radius也可以一次给予多个值" class="headerlink" title="border-radius也可以一次给予多个值"></a>border-radius也可以一次给予多个值</h3><table>
+<thead>
+<tr>
+<th align="center">值的数量</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">一个</td>
+<td align="center">4个角都覆盖圆角</td>
+</tr>
+<tr>
+<td align="center">两个</td>
+<td align="center">第一个值对于的是左上和右下，第二个值对于右上和左下</td>
+</tr>
+<tr>
+<td align="center">三个</td>
+<td align="center">第一个值对于的是左上 第二个值对于右上和左下 第三个值对应右下</td>
+</tr>
+<tr>
+<td align="center">四个</td>
+<td align="center">第一个值对于左上 第二个值对于右上 第三个值对于右下 第四个值对于左下</td>
+</tr>
+</tbody></table>
+<h2 id="盒子阴影-box-shadow"><a href="#盒子阴影-box-shadow" class="headerlink" title="盒子阴影 box-shadow"></a>盒子阴影 box-shadow</h2><table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">h-shadow(必须)</td>
+<td align="center">水平阴影的位置</td>
+</tr>
+<tr>
+<td align="center">v-shadow(必须)</td>
+<td align="center">垂直阴影的位置</td>
+</tr>
+<tr>
+<td align="center">blue(可选)</td>
+<td align="center">模糊距离</td>
+</tr>
+<tr>
+<td align="center">spred(可选)</td>
+<td align="center">阴影尺寸</td>
+</tr>
+<tr>
+<td align="center">color(可选)</td>
+<td align="center">阴影颜色</td>
+</tr>
+<tr>
+<td align="center">inset(可选)</td>
+<td align="center">将默认的外阴影设置为内阴影</td>
+</tr>
+</tbody></table>
+<h2 id="文字阴影-text-shadow（和盒子阴影相比也就少了可选2属性）"><a href="#文字阴影-text-shadow（和盒子阴影相比也就少了可选2属性）" class="headerlink" title="文字阴影 text-shadow（和盒子阴影相比也就少了可选2属性）"></a>文字阴影 text-shadow（和盒子阴影相比也就少了可选2属性）</h2><table>
+<thead>
+<tr>
+<th align="center">属性</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">h-shadow(必须)</td>
+<td align="center">水平阴影的位置</td>
+</tr>
+<tr>
+<td align="center">v-shadow(必须)</td>
+<td align="center">垂直阴影的位置</td>
+</tr>
+<tr>
+<td align="center">blue(可选)</td>
+<td align="center">模糊距离</td>
+</tr>
+<tr>
+<td align="center">color(可选)</td>
+<td align="center">阴影颜色</td>
+</tr>
+</tbody></table>
+<h1 id="tip-网页设计第一准则：多个块横找浮动！-多个块纵找标准！（3大设计流-标准-浮动-定位）"><a href="#tip-网页设计第一准则：多个块横找浮动！-多个块纵找标准！（3大设计流-标准-浮动-定位）" class="headerlink" title="tip:网页设计第一准则：多个块横找浮动！ 多个块纵找标准！（3大设计流 标准 浮动 定位）"></a>tip:网页设计第一准则：多个块横找浮动！ 多个块纵找标准！（3大设计流 标准 浮动 定位）</h1><h1 id="浮动-float"><a href="#浮动-float" class="headerlink" title="浮动 float"></a>浮动 float</h1><h2 id="关于浮动的问题"><a href="#关于浮动的问题" class="headerlink" title="关于浮动的问题"></a>关于浮动的问题</h2><ul>
+<li>问：为什么需要浮动？</li>
+<li>答：有时候标准流很难做到一些事情浮动都可以做到</li>
+<li>问: 比如说什么事情很难做到？</li>
+<li>答: 把块级元素横强行转换排列时会有无法控制的间隔 而用浮动可以解决</li>
+<li>问：什么是浮动？</li>
+<li>答：float属性用于创建浮动框，将其移动到一边，直到左边缘或右边缘或另一个浮动框的边缘</li>
+</ul>
+<h2 id="浮动的特性"><a href="#浮动的特性" class="headerlink" title="浮动的特性"></a>浮动的特性</h2><ol>
+<li>浮动元素会脱离标准流(俗称脱标)</li>
+</ol>
+<ul>
+<li>脱离标准普通流控制(浮)移动到指定位置(动)</li>
+<li>浮动的盒子不再保留原先位置</li>
+</ul>
+<ol start="2">
+<li>浮动的元素会一行内显示并且元素顶部对齐</li>
+<li>浮动的元素具有部分行内块元素的特性</li>
+</ol>
+<ul>
+<li>比如说块级元素宽度本默认和父级一样，但添加浮动后宽度根据内容而定</li>
+<li>浮动的盒子是没有间隙的，紧挨着一起</li>
+<li>行内元素同理</li>
+</ul>
+<h1 id="网页设计准则"><a href="#网页设计准则" class="headerlink" title="网页设计准则"></a>网页设计准则</h1><ol>
+<li>标准流里套浮动</li>
+<li>先量盒子后摆放</li>
+</ol>
+<h1 id="浮动会出现的问题"><a href="#浮动会出现的问题" class="headerlink" title="浮动会出现的问题"></a>浮动会出现的问题</h1><h3 id="有时候我们的标准流盒子的高度不太好设定死，我们的理想状态是里面有多少盒子浮动就会自己撑开标准流父盒子的高度，但这实际上会出现一个问题，被设为浮动的盒子，父盒子其实是感受不到它们的存在的，因为浮动的盒子不占位置，浮动的盒子会被挤在下一行这时候已经显示异常了如果父盒子下面还有其他标准流，就会在靠在父盒子的后面。"><a href="#有时候我们的标准流盒子的高度不太好设定死，我们的理想状态是里面有多少盒子浮动就会自己撑开标准流父盒子的高度，但这实际上会出现一个问题，被设为浮动的盒子，父盒子其实是感受不到它们的存在的，因为浮动的盒子不占位置，浮动的盒子会被挤在下一行这时候已经显示异常了如果父盒子下面还有其他标准流，就会在靠在父盒子的后面。" class="headerlink" title="有时候我们的标准流盒子的高度不太好设定死，我们的理想状态是里面有多少盒子浮动就会自己撑开标准流父盒子的高度，但这实际上会出现一个问题，被设为浮动的盒子，父盒子其实是感受不到它们的存在的，因为浮动的盒子不占位置，浮动的盒子会被挤在下一行这时候已经显示异常了如果父盒子下面还有其他标准流，就会在靠在父盒子的后面。"></a>有时候我们的标准流盒子的高度不太好设定死，我们的理想状态是里面有多少盒子浮动就会自己撑开标准流父盒子的高度，但这实际上会出现一个问题，被设为浮动的盒子，父盒子其实是感受不到它们的存在的，因为浮动的盒子不占位置，浮动的盒子会被挤在下一行<br><del>这时候已经显示异常了</del><br>如果父盒子下面还有其他标准流，就会在靠在父盒子的后面。</h3><h4 id="所以我们需要清除浮动，让标准流里的盒子重新占位，而不是在天上乱飞清除浮动只是清除浮动带来的影响"><a href="#所以我们需要清除浮动，让标准流里的盒子重新占位，而不是在天上乱飞清除浮动只是清除浮动带来的影响" class="headerlink" title="所以我们需要清除浮动，让标准流里的盒子重新占位，而不是在天上乱飞清除浮动只是清除浮动带来的影响"></a>所以我们需要清除浮动，让标准流里的盒子重新占位，而不是在天上乱飞<br><del>清除浮动只是清除浮动带来的影响</del></h4><h3 id="清除浮动的4种方法"><a href="#清除浮动的4种方法" class="headerlink" title="清除浮动的4种方法"></a>清除浮动的4种方法</h3><ol>
+<li>额外标签法 也叫隔墙法(W3C推荐)</li>
+</ol>
+<ul>
+<li>在最后浮动的元素后面添加一个空的标签，然后赋予clear: both <del>其实你也可以clear: left clear: right</del></li>
+<li>优点 简单快捷，书写方便</li>
+<li>缺点 添加许多无用标签 影响代码可读性</li>
+<li>注意点 添加的空标签一定得是块级标签(br是个例外)</li>
+</ul>
+<ol start="2">
+<li>用overflow属性</li>
+</ol>
+<ul>
+<li>把值设置为 hidden auto scroll</li>
+<li>优点 快 短 狠</li>
+<li>缺点 溢出的部分会被拦腰斩截 <del>还好浮动不会溢出</del></li>
+<li>注意点 子不教父之过 给浮动元素们的爸爸加上</li>
+</ul>
+<ol start="3">
+<li>用伪元素after</li>
+</ol>
+<ul>
+<li>代码 <br>.clearfix:after{<br>content: “”;<br>display: block;<br>height: 0;<br>clear: both;<br>visibility: hidden;}<br>.clearfix{<br>&#x2F;&#x2F;IE6-7兼容代码<br>*zoom: 1;<br>}</li>
+<li>缺点: 不支持低版本IE<del>谁用IE啊？</del></li>
+<li>注意点 子不教父之过 给浮动元素们的爸爸加上</li>
+</ul>
+<ol start="4">
+<li>用双伪元素</li>
+</ol>
+<ul>
+<li>代码: <br>.clarfix:before,<br>clarfix:after{<br>content: “”;<br>display: table;<br>}<br>.clarfix:after{<br>clear: both;<br>}<br>.clearfix{<br>&#x2F;&#x2F;IE6-7兼容代码<br>*zoom: 1;<br>}</li>
+<li>缺点: 不支持低版本IE<del>谁用IE啊？</del></li>
+<li>注意点 子不教父之过 给浮动元素们的爸爸加上<h3 id="清除浮动的本质是？"><a href="#清除浮动的本质是？" class="headerlink" title="清除浮动的本质是？"></a>清除浮动的本质是？</h3><h4 id="清除浮动的本质其实就算清除浮动元素脱离标准流后带来的影响"><a href="#清除浮动的本质其实就算清除浮动元素脱离标准流后带来的影响" class="headerlink" title="清除浮动的本质其实就算清除浮动元素脱离标准流后带来的影响"></a>清除浮动的本质其实就算清除浮动元素脱离标准流后带来的影响</h4><h3 id="清除浮动采用的策略是什么？"><a href="#清除浮动采用的策略是什么？" class="headerlink" title="清除浮动采用的策略是什么？"></a>清除浮动采用的策略是什么？</h3><h4 id="采用闭合法-把浮动元素“关”在父盒子里使其无法影响到外边的盒子"><a href="#采用闭合法-把浮动元素“关”在父盒子里使其无法影响到外边的盒子" class="headerlink" title="采用闭合法 把浮动元素“关”在父盒子里使其无法影响到外边的盒子"></a>采用闭合法 把浮动元素“关”在父盒子里使其无法影响到外边的盒子</h4><h3 id="什么是额外标签法？"><a href="#什么是额外标签法？" class="headerlink" title="什么是额外标签法？"></a>什么是额外标签法？</h3><h4 id="采用闭合法-在最后一个浮动元素的后面添加一个空的块级元素-也可以是br这个例外-然后给她添加去除浮动的样式属性clear-both-或者-clear-left-或者-clear-right一般不推荐使用但可能会遇见有人这么写"><a href="#采用闭合法-在最后一个浮动元素的后面添加一个空的块级元素-也可以是br这个例外-然后给她添加去除浮动的样式属性clear-both-或者-clear-left-或者-clear-right一般不推荐使用但可能会遇见有人这么写" class="headerlink" title="采用闭合法 在最后一个浮动元素的后面添加一个空的块级元素(也可以是br这个例外)然后给她添加去除浮动的样式属性clear: both 或者 clear: left 或者 clear: right一般不推荐使用但可能会遇见有人这么写"></a>采用闭合法 在最后一个浮动元素的后面添加一个空的块级元素(也可以是br这个例外)然后给她添加去除浮动的样式属性clear: both 或者 clear: left 或者 clear: right<br>一般不推荐使用但可能会遇见有人这么写</h4><h3 id="什么时候清除浮动？"><a href="#什么时候清除浮动？" class="headerlink" title="什么时候清除浮动？"></a>什么时候清除浮动？</h3><h4 id="1-父盒子没有宽度2-子盒子浮动了3-盒子浮动影响下面的标准流布局"><a href="#1-父盒子没有宽度2-子盒子浮动了3-盒子浮动影响下面的标准流布局" class="headerlink" title="1.父盒子没有宽度2.子盒子浮动了3.盒子浮动影响下面的标准流布局"></a>1.父盒子没有宽度<br>2.子盒子浮动了<br>3.盒子浮动影响下面的标准流布局</h4></li>
 </ul>
 
             </div>
@@ -500,6 +779,12 @@
                 <div class="post-prevnext">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2022/04/11/%E9%87%8C%E6%B0%8F%E8%BD%AC%E6%8D%A2/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">里氏转换</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
