@@ -24,7 +24,7 @@
 <meta property="og:description" content="学TNND 都给我学">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-20T07:00:15.000Z">
-<meta property="article:modified_time" content="2022-04-20T09:28:28.471Z">
+<meta property="article:modified_time" content="2022-05-04T08:52:49.382Z">
 <meta property="article:author" content="Moli233">
 <meta property="article:tag" content="C#">
 <meta name="twitter:card" content="summary_large_image">
@@ -208,7 +208,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1k 字
+      1.4k 字
     </span>
   
 
@@ -217,7 +217,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      3 分钟
+      4 分钟
     </span>
   
 
@@ -333,7 +333,23 @@
 <li>声明byte数组 数组名 &#x3D; Encoding.想用的编码格式.GetBytes(需要转的字符串);<h3 id="如果你不想覆盖可以看看File-AppendAllLines-File-AppendAllText-File-AppendText"><a href="#如果你不想覆盖可以看看File-AppendAllLines-File-AppendAllText-File-AppendText" class="headerlink" title="如果你不想覆盖可以看看File.AppendAllLines File.AppendAllText File.AppendText"></a>如果你不想覆盖可以看看File.AppendAllLines File.AppendAllText File.AppendText</h3></li>
 <li>加了Append 的方法在原来的基础上是不会覆盖的，只会在原有的内容上追加 如果不存在指定文件就会创建一个</li>
 </ul>
-
+<h1 id="FileStream类-文件流-操作字节"><a href="#FileStream类-文件流-操作字节" class="headerlink" title="FileStream类 文件流 操作字节"></a>FileStream类 文件流 操作字节</h1><h3 id="ps-她是普通的类和她的姐姐File不同，需要创建她的对象哟"><a href="#ps-她是普通的类和她的姐姐File不同，需要创建她的对象哟" class="headerlink" title="ps:她是普通的类和她的姐姐File不同，需要创建她的对象哟"></a>ps:她是普通的类和她的姐姐File不同，需要创建她的对象哟</h3><h2 id="File就如把你丢尽水缸里喝水，万一水多-文件大小-就会给你淹死-内存爆炸-所以我们需要一个可以自定义大小的水杯喝水-那就是我们的FileStream啦！"><a href="#File就如把你丢尽水缸里喝水，万一水多-文件大小-就会给你淹死-内存爆炸-所以我们需要一个可以自定义大小的水杯喝水-那就是我们的FileStream啦！" class="headerlink" title="File就如把你丢尽水缸里喝水，万一水多(文件大小)就会给你淹死(内存爆炸) 所以我们需要一个可以自定义大小的水杯喝水 那就是我们的FileStream啦！"></a>File就如把你丢尽水缸里喝水，万一水多(文件大小)就会给你淹死(内存爆炸) 所以我们需要一个可以自定义大小的水杯喝水 那就是我们的FileStream啦！</h2><h3 id="FileSteram-我是她的对象的名字-x3D-new-FileStream-操作文件的路径-FileMode-枚举类型提供的打开方式-FileAccess-枚举类型提供的读写"><a href="#FileSteram-我是她的对象的名字-x3D-new-FileStream-操作文件的路径-FileMode-枚举类型提供的打开方式-FileAccess-枚举类型提供的读写" class="headerlink" title="FileSteram 我是她的对象的名字 &#x3D; new FileStream (操作文件的路径,FileMode.枚举类型提供的打开方式,FileAccess.枚举类型提供的读写)"></a>FileSteram 我是她的对象的名字 &#x3D; new FileStream (操作文件的路径,FileMode.枚举类型提供的打开方式,FileAccess.枚举类型提供的读写)</h3><table>
+<thead>
+<tr>
+<th align="center">常用方法</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">FileStream对象名.Read(装读取到字节的byte数组,开始处数int,要读取的字节数int)</td>
+<td align="center">读取</td>
+</tr>
+<tr>
+<td align="center">FileStream对象名.write(装要写入字节的byte数组,开始处数int,要写入的字节数int)</td>
+<td align="center">写入</td>
+</tr>
+</tbody></table>
+<h1 id="SteramRead类-读文本文件"><a href="#SteramRead类-读文本文件" class="headerlink" title="SteramRead类 读文本文件"></a>SteramRead类 读文本文件</h1>
             </div>
             <hr>
             <div>
